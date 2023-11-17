@@ -1,0 +1,21 @@
+.noProductFound {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.sorry {
+  width: 120px;
+  margin: 50px;
+  animation: moveAnimation 4s linear infinite;
+}
+
+@keyframes moveAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}

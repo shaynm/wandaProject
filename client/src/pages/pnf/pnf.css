@@ -1,0 +1,57 @@
+.pnfPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pnf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.pnf img {
+  width: 200px;
+  margin: -50px;
+  opacity: 0.8;
+  animation: jumpAnimation 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+@keyframes jumpAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+.pnf p {
+  font-size: 220px;
+  color: #3a3a3a;
+  font-weight: 800;
+  letter-spacing: -20px;
+  opacity: 0.9;
+}
+
+.pngText {
+  line-height: 0;
+}
+
+.pnfPage button:hover {
+  background-color: #3a3a3a;
+  color: white;
+}

@@ -1,0 +1,94 @@
+.card {
+  width: 300px;
+  height: 195px;
+  background: #efefef;
+  border-radius: 10px;
+  transition: 0.5s all;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.imageBox {
+  position: absolute;
+  top: 5px !important;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  transition: 0.5s;
+  user-select: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.imageBox .productImageCard {
+  position: absolute;
+  top: 20px;
+  left: -15%;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+  transition: 0.5s all;
+}
+
+.card:hover {
+  background: #dcdcdc;
+}
+
+.card:hover .productImageCard {
+  padding: 0;
+  top: 5px;
+  left: -15%;
+}
+
+.contentCard {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #ffffff;
+}
+
+.contentCard .details {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  cursor: pointer;
+}
+
+.contentCard .details h2 {
+  font-size: 11pt;
+  font-weight: 300;
+  color: rgb(91, 91, 91);
+  padding: 0;
+  margin: 0;
+}
+
+.contentCard .details p {
+  font-size: 11pt;
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 46%;
+    height: 160px;
+  }
+
+  .imageBox .productImageCard {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    padding: 10px;
+    transition: 0.5s all;
+  }
+
+  .card:hover .productImageCard {
+    top: 0;
+    left: 0;
+  }
+}
