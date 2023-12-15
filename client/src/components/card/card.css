@@ -72,8 +72,8 @@
 
 @media only screen and (max-width: 767px) {
   .card {
-    width: 46%;
-    height: 160px;
+    width: 100%;
+    margin-right: 0;
   }
 
   .imageBox .productImageCard {
