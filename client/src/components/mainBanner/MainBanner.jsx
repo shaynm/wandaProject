@@ -1,6 +1,7 @@
 import "./mainBanner.css";
 import { FiChevronRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import CouponComponent from "../../pages/cart/CouponComponent";
 
 const MainBanner = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const MainBanner = () => {
             wherever you go. Experience the allure of our 2023 collection – a
             celebration of natural beauty and artistic craftsmanship.
           </p>
-
+          <CouponComponent />
           <div className="carousel-container">
             <div className="d-flex row">
               <div className="col-4 p-2 ">

@@ -1,0 +1,89 @@
+.button-wrapper {
+  position: fixed;
+  bottom: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transition: ease 1s;
+}
+
+.button-wrapper.unpacked {
+  bottom: 0;
+}
+
+.present-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 64px;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  outline: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.present-wrapper {
+  width: 100px;
+  height: 200px;
+  padding: 16px;
+  background-color: #3a3a3a;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: white;
+  border: dotted 3px #a99146;
+}
+
+.background {
+  border-radius: 30px 30px 1px 1px;
+
+  background: repeating-linear-gradient(
+      to top left,
+      #ecf0f1 0,
+      #ecf0f1 2em,
+      #bdc3c7 2em,
+      #bdc3c7 4em,
+      #ecf0f1 4em,
+      #ecf0f1 6em
+    ),
+    repeating-linear-gradient(
+      to left,
+      #3a3a3a,
+      #3a3a3a 2em,
+      #3a3a3a 2em,
+      #3a3a3a 4em,
+      #3a3a3a 4em,
+      #3a3a3a 6em
+    ),
+    #ecf0f1;
+  background-blend-mode: multiply;
+}
+.background:hover {
+  border-radius: 30px 30px 1px 1px;
+
+  background: repeating-linear-gradient(
+      to top left,
+      #ecf0f1 0,
+      #ecf0f1 2em,
+      #bdc3c7 2em,
+      #bdc3c7 4em,
+      #ecf0f1 4em,
+      #ecf0f1 6em
+    ),
+    repeating-linear-gradient(
+      to left,
+      #3a3a3a,
+      #3a3a3a 2em,
+      #3a3a3a 2em,
+      #3a3a3a 4em,
+      #3a3a3a 4em,
+      #3a3a3a 6em
+    ),
+    #ecf0f1;
+  background-blend-mode: multiply;
+}

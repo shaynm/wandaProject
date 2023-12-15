@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 import Loading from "../../components/loading/Loading";
 import EmptyBag from "../../components/emptyBag/EmptyBag";
 import { useProductService } from "../products/ProductProvider";
+import CouponComponent from "./CouponComponent";
 
 function Cart() {
   const isLogged = sessionStorage.getItem("token");
@@ -32,13 +33,13 @@ function Cart() {
   }, [cart, originalSum]);
 
   const handleApplyCoupon = () => {
-    if (coupon === "Sale25") {
+    if (coupon === "wanda25") {
       setSum(originalSum * 0.75);
       setApplied(true);
       successMsg("Congratulations! you earn 25% OFF!");
     } else {
       setApplied(false);
-      errorMsg('Coupon was not found.. try "Sale25"');
+      errorMsg('Coupon was not found.. try "wanda25"');
     }
   };
 
@@ -159,7 +160,7 @@ function Cart() {
                     </table>
                   </div>
                 </div>
-
+                <CouponComponent />
                 <div className="col col-lg-4 ol-sm-12 orderSummary">
                   <h3>Order Summary</h3>
                   <div className="d-flex justify-content-between mx-2">

@@ -100,6 +100,7 @@ function App() {
           </TokenContext.Provider>
         </ProductProvider>
       </UserContext.Provider>
+
       {token && <SessionTimeoutChecker />}
     </Router>
   );

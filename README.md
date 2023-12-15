@@ -65,6 +65,19 @@ SessionTimeoutChecker
 
 # Wanda's Project Jewelry online store.
 
+Important rules:
+It is possible to change a user from admin to non-admin only through the database directly.
+I have already connected the system to the Atlas database, as I have entered the data so that you can see the site in its entirety during the test.
+To check my existing database, I created two users:
+
+Admin User:
+Username: bdikaadmin
+Password: Aa1234567!
+
+Regular User:
+Username: bdika
+Password: Aa1234567!
+
 ### A full stack e-commerce website for Wanda Jewelry.
 
 ## Stacks
