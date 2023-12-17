@@ -1,3 +1,5 @@
+Designed and developed by Shay Yani. All rights reserved.2023 ©
+
 חנות התכשיטים של וונדה
 
 פרוייקט גמר פול סטאק האקר יו
@@ -152,3 +154,5 @@ PORT= // PORT NUMBER
 dataBase= // Database-url
 secretKey= // String
 ```
+
+Designed and developed by Shay Yani. All rights reserved.2023 ©
